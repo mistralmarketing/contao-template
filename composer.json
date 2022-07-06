@@ -1,0 +1,37 @@
+{
+    "type": "project",
+    "require": {
+        "contao/conflicts": "*@dev",
+        "contao/manager-bundle": "4.13.*",
+        "contao/news-bundle": "4.13.*",
+        "markocupic/contao-component-bootstrap": "4.*",
+        "markocupic/contao-component-fontawesome-free": "^5.13",
+        "contao-bootstrap/core": "^2.1",
+        "contao-bootstrap/grid": "^2.4",
+        "contao-bootstrap/layout": "^2.1",
+        "contao-bootstrap/navbar": "^2.2",
+        "netzmacht/contao-font-awesome-inserttag": "^2.2",
+        "terminal42/contao-pageimage": "^4.1",
+        "terminal42/notification_center": "^1.6",
+        "madeyourday/contao-rocksolid-antispam": "^2.0"
+    },
+    "extra": {
+        "public-dir": "web",
+        "contao-component-dir": "assets"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php vendor/bin/contao-setup"
+        ],
+        "post-update-cmd": [
+            "@php vendor/bin/contao-setup"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "contao/manager-plugin": true,
+            "contao-community-alliance/composer-plugin": true
+        }
+    }
+}

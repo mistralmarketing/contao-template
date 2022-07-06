@@ -1,0 +1,21 @@
+@import "/assets/contao-component-bootstrap/bootstrap/dist/css/bootstrap-reboot.min.css";
+@import "/assets/contao-component-bootstrap/bootstrap/dist/css/bootstrap.min.css";
+@import "/assets/contao-component-bootstrap/bootstrap/dist/css/bootstrap-grid.min.css";
+
+@import "/assets/contao-component-fontawesome-free/fontawesomefree/css/fontawesome.min.css";
+@import "/assets/contao-component-fontawesome-free/fontawesomefree/css/solid.css";
+@import "/assets/contao-component-fontawesome-free/fontawesomefree/css/brands.css";
+
+@import "fonts";
+@import "colors";
+@import "layout";
+@import "bootstrap";
+
+:root {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
