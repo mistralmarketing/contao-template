@@ -1,0 +1,11 @@
+app/
+assets/
+composer.lock
+config/
+contao-manager/
+system/
+var/cache/
+var/logs/
+var/jwt_secret
+vendor/
+web/
