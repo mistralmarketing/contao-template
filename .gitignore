@@ -8,4 +8,12 @@ var/cache/
 var/logs/
 var/jwt_secret
 vendor/
-web/
+web/assets
+web/bundles/
+web/files/
+web/share/
+web/system/
+web/vendor/
+web/app.php
+web/index.php
+web/preview.php
