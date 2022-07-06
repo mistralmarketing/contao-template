@@ -1,0 +1,48 @@
+.img-fluid {
+	width: 100%;
+}
+
+.btn-primary {
+    background-color: $primary ;
+    border-color: $primary ;
+}
+.btn-primary:hover {
+    background-color: $primary-light;
+    border-color: $primary-light;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    background-color: $primary-light;
+    border-color: $primary-light;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: $background;
+    background-color: $primary-light;
+    border-color: $primary-light;
+    box-shadow: 0 0 0 .2rem $primary-transparent;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem $primary-transparent
+}
+
+
+.btn-secondary {
+    background-color: $secondary ;
+    border-color: $secondary ;
+}
+.btn-secondary:hover {
+    background-color: $secondary-light;
+    border-color: $secondary-light;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+    background-color: $secondary-light;
+    border-color: $secondary-light;
+}
+.btn-secondary.focus, .btn-secondary:focus {
+    color: $background;
+    background-color: $secondary-light;
+    border-color: $secondary-light;
+    box-shadow: 0 0 0 .2rem $secondary-transparent;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem $secondary-transparent
+}
