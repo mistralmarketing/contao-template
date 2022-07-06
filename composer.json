@@ -11,8 +11,6 @@
         "contao-bootstrap/layout": "^2.1",
         "contao-bootstrap/navbar": "^2.2",
         "netzmacht/contao-font-awesome-inserttag": "^2.2",
-        "terminal42/contao-pageimage": "^4.1",
-        "terminal42/notification_center": "^1.6",
         "madeyourday/contao-rocksolid-antispam": "^2.0"
     },
     "extra": {

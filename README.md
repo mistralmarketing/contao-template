@@ -1,4 +1,4 @@
-# mistral-marketing/contao-template
+# mistralmarketing/contao-template
 
 Template für ein neues Contao-Projekt auf PHP 8.1
 
@@ -6,5 +6,8 @@ Template für ein neues Contao-Projekt auf PHP 8.1
 - contao-bootstrap
 - fontawesome
 - Rocksolid Antispam
-- Bild der Seite
-- Notification Center
+
+## To Do
+
+- selbstgebaute Navi einfügen
+- Standardresources für Header und Footer angelegn und einbinden
