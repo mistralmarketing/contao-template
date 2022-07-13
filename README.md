@@ -56,5 +56,7 @@ Das Skript kann auf einem Linuxsystem irgendwo zentral abgelegt werden, muss abe
 	cd $workdir/
 	chown -R $usr:$grp contao/
 
+	cd $workdir/contao/
+
 	sudo -u $usr php8.1 vendor/bin/contao-console contao:backup:restore
 	sudo -u $usr php8.1 vendor/bin/contao-console contao:user:password sysadmin
