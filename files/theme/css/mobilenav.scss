@@ -1,0 +1,207 @@
+#header {
+	.invisible {
+		display: none;
+	}
+	.nav--burger {
+		background-color: transparent;
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
+		z-index: 9999999999;
+		.btn--burger {
+			-webkit-transition: all 300ms ease-in-out;
+			-moz-transition: all 300ms ease-in-out;
+			-ms-transition: all 300ms ease-in-out;
+			-o-transition: all 300ms ease-in-out;
+			transition: all 300ms ease-in-out;
+			font-size: 2rem;
+			color: $background;
+			background-color: $primary;
+			padding: .3rem 1rem;
+			border-radius: 10rem;
+			display: block;
+			width: 4rem;
+			text-align: center;
+		}
+		.btn--burger.is--open {
+			background-color: $secondary;
+			.fa-bars::before {
+				content: '\f00d';
+			}
+		}
+		.btn--burger.is--open.level_2--open {
+			.fa-bars::before {
+				content: '\f060';
+			}
+		}
+	}
+	.mobile--nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $primary-transparent;
+		z-index: 99999;
+		#mainNav {
+			top: 0;
+			left: 0;
+			position: absolute;
+		}
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-ms-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
+		-moz-transform: translateX(200%);
+		-webkit-transform: translateX(200%);
+		-o-transform: translateX(200%);
+		-ms-transform: translateX(200%);
+		transform: translateX(200%);
+		.level_1 {
+			-webkit-transition: all 300ms ease-in-out;
+			-moz-transition: all 300ms ease-in-out;
+			-ms-transition: all 300ms ease-in-out;
+			-o-transition: all 300ms ease-in-out;
+			transition: all 300ms ease-in-out;
+			padding: 0;
+			padding-left: 2rem;
+			margin-top: 7rem;
+			display: flex;
+			flex-direction: column;
+			li {
+				list-style-type: none !important;
+				color: $background;
+				font-size: 1.5rem;
+				width: 100%;
+				line-height: 2;
+				a, strong {
+					color: $background !important;
+					padding: 1rem;
+					cursor: pointer;
+				}
+				a:hover {
+					text-decoration: none;
+				}
+				a.submenu::after,
+				strong.submenu::after {
+					content: "\f054";
+					font-family: 'Font Awesome 5 Free';
+					font-weight: 900;
+					font-size: .8em;
+					margin-left: .5rem;
+				}
+			}
+			.submenu {
+				margin: 0;
+				border-radius: 0;
+			}
+			.submenu:hover {
+				background-color: transparent;
+			}
+		}
+
+		.level_2,
+		.level_3,
+		.level_4 {
+			display: flex;
+			flex-direction: column;
+			padding-top: 7rem;
+			padding-left: 2rem;
+			padding-right: 0;
+			padding-bottom: 0;
+
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 99999;
+
+			-webkit-transition: all 300ms ease-in-out;
+			-moz-transition: all 300ms ease-in-out;
+			-ms-transition: all 300ms ease-in-out;
+			-o-transition: all 300ms ease-in-out;
+			transition: all 300ms ease-in-out;
+			-moz-transform: translateX(200%);
+			-webkit-transform: translateX(200%);
+			-o-transform: translateX(200%);
+			-ms-transform: translateX(200%);
+			transform: translateX(200%);
+		}
+		.level_2 {
+			background-color: $primary-transparent;
+		}
+		.level_3 {
+			background-color: $primary-transparent;
+		}
+		.level_4 {
+			background-color: $primary-transparent;
+		}
+	}
+	.mobile--nav.is--open {
+		transform: translateX(0%);
+		.level_2.is--open,
+		.level_3.is--open,
+		.level_4.is--open {
+			-moz-transform: translateX(5%);
+			-webkit-transform: translateX(5%);
+			-o-transform: translateX(5%);
+			-ms-transform: translateX(5%);
+			transform: translateX(5%);
+		}
+	}
+	.mobile--nav.is--open.level_2--open .level_1,
+	.mobile--nav.is--open.level_3--open .level_2,
+	.mobile--nav.is--open.level_4--open .level_3 {
+		padding-left: .5rem;
+	}
+}
+
+@media screen and (min-width: 993px) {
+	#left {
+		.level_1 {
+			padding: 0;
+			li {
+				list-style-type: none;
+				font-weight: 200;
+				font-size: 1.25rem;
+				white-space: nowrap;
+				a, strong {
+					display: block;
+					color: #1A1A1A;
+					white-space: nowrap;
+					padding: .75rem 1rem;
+				}
+				a:hover {
+					color: $primary;
+				}
+				a.submenu::after, strong.submenu::after {
+					display: inline-block;
+					margin-left: .255em;
+					vertical-align: .255em;
+					content: "";
+					border-top: .3em solid;
+					border-right: .3em solid transparent;
+					border-bottom: 0;
+					border-left: .3em solid transparent;
+				}
+			}
+			.level_2 {
+				display: none;
+				padding: 0;
+				background-color:#f7f7f7;
+				li {
+					text-transform: initial;
+					font-size: 1rem;
+					a, strong {
+						padding: .25rem 1rem;
+					}
+				}
+			}
+			.level_2.is--open, .trail .level_2 {
+				display: block;
+			}
+		}
+	}
+}
