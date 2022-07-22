@@ -10,6 +10,10 @@
         # Allow CORS on the Contao TinyMCE skin.
         RewriteRule ^assets/tinymce4/js/skins/contao/fonts/ - [ENV=CONTAO_TINYMCE_SKIN:true]
         Header set Access-Control-Allow-Origin "*" env=CONTAO_TINYMCE_SKIN
+
+        <FilesMatch "\.(svg|woff|woff2)$">
+            Header set Cache-Control "public, max-age=31536000, no-transform"
+        </FilesMatch>
     </IfModule>
 
     # Determine the RewriteBase automatically and set it as environment variable.
