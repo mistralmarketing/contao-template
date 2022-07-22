@@ -48,7 +48,6 @@ Das Skript kann auf einem Linuxsystem irgendwo zentral abgelegt werden, muss abe
 
 	cat > .env << ENDOFFILE
 	# .env
-	APP_ENV=prod
 	APP_SECRET=$secret
 	DATABASE_URL="mysql://$dbuser:$dbpass@localhost:3306/$dbname"
 	ENDOFFILE
