@@ -1,17 +1,18 @@
 {
     "type": "project",
     "require": {
-        "contao/conflicts": "*@dev",
-        "contao/manager-bundle": "4.13.*",
-        "contao/news-bundle": "4.13.*",
-        "markocupic/contao-component-bootstrap": "4.*",
-        "markocupic/contao-component-fontawesome-free": "^5.13",
         "contao-bootstrap/core": "^2.1",
+        "contao-bootstrap/form": "^2.2",
         "contao-bootstrap/grid": "^2.4",
         "contao-bootstrap/layout": "^2.1",
         "contao-bootstrap/navbar": "^2.2",
-        "netzmacht/contao-font-awesome-inserttag": "^2.2",
-        "madeyourday/contao-rocksolid-antispam": "^2.0"
+        "contao/conflicts": "*@dev",
+        "contao/manager-bundle": "4.13.*",
+        "contao/news-bundle": "4.13.*",
+        "madeyourday/contao-rocksolid-antispam": "^2.0",
+        "markocupic/contao-component-bootstrap": "4.*",
+        "markocupic/contao-component-fontawesome-free": "^5.13",
+        "netzmacht/contao-font-awesome-inserttag": "^2.2"
     },
     "extra": {
         "public-dir": "web",
