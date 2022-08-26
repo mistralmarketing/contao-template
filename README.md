@@ -27,7 +27,7 @@ Das Skript kann auf einem Linuxsystem irgendwo zentral abgelegt werden, muss abe
 
 	chown -R $usr:$grp contao/
 
-	cd $workdir/contao/web/
+	cd $workdir/contao/public/
 
 	sudo -u $usr php8.1 -q -dmax_execution_time=0 -dmemory_limit=-1 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=Europe/Berlin contao-manager.phar.php self-update
 
