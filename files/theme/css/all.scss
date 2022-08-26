@@ -2,9 +2,10 @@
 @import "/assets/contao-component-bootstrap/bootstrap/dist/css/bootstrap.min.css";
 @import "/assets/contao-component-bootstrap/bootstrap/dist/css/bootstrap-grid.min.css";
 
-@import "/assets/contao-component-fontawesome-free/fontawesomefree/css/fontawesome.min.css";
-@import "/assets/contao-component-fontawesome-free/fontawesomefree/css/solid.css";
-@import "/assets/contao-component-fontawesome-free/fontawesomefree/css/brands.css";
+@import "/assets/contao-component-fontawesome-free/fontawesomefree/js-packages/@fortawesome/fontawesome-free/css/fontawesome.min.css";
+@import "/assets/contao-component-fontawesome-free/fontawesomefree/js-packages/@fortawesome/fontawesome-free/css/regular.css";
+@import "/assets/contao-component-fontawesome-free/fontawesomefree/js-packages/@fortawesome/fontawesome-free/css/solid.css";
+@import "/assets/contao-component-fontawesome-free/fontawesomefree/js-packages/@fortawesome/fontawesome-free/css/brands.css";
 
 @import "fonts";
 @import "colors";
