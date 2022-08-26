@@ -15,7 +15,6 @@
         "netzmacht/contao-font-awesome-inserttag": "^2.2"
     },
     "extra": {
-        "public-dir": "web",
         "contao-component-dir": "assets"
     },
     "scripts": {
