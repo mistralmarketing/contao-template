@@ -12,7 +12,9 @@
         "madeyourday/contao-rocksolid-antispam": "^2.0",
         "markocupic/contao-component-bootstrap": "4.*",
         "markocupic/contao-component-fontawesome-free": "^5.13",
-        "netzmacht/contao-font-awesome-inserttag": "^2.2"
+        "netzmacht/contao-font-awesome-inserttag": "^2.2",
+        "terminal42/contao-pageimage": "^4.1",
+        "heimrichhannot/contao-slick-bundle": "^1.8"
     },
     "extra": {
         "contao-component-dir": "assets"
