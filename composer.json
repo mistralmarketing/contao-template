@@ -9,7 +9,7 @@
         "contao/conflicts": "*@dev",
         "contao/manager-bundle": "4.13.*",
         "contao/news-bundle": "4.13.*",
-        "madeyourday/contao-rocksolid-antispam": "^2.0",
+        "madeyourday/contao-rocksolid-antispam": "^2.1",
         "markocupic/contao-component-bootstrap": "4.*",
         "markocupic/contao-component-fontawesome-free": "^5.13",
         "netzmacht/contao-font-awesome-inserttag": "^2.2",
